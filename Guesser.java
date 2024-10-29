@@ -41,6 +41,23 @@ public class Guesser{
    * rules() method, next the doGuesses() method.
    */
   public void start(){
+    int i = 0; // counts guesses 
+    int middle; // Variabel for midworth
+
+    // loops untill low meets highh
+    while (low < high) {
+        middle = (low + high) / 2; 
+        System.out.println("Is the number less than or equal to " + middle + "?");
+        
+        
+        String reply = getReply();
+        
+        if ("T".equals(reply)) {
+            high = middle;
+        } else {
+            low = middle + 1;
+        }
+        i++; 
     // call the rules method here
     // call the doGuesses() method here
   }
