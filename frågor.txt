@@ -1,0 +1,40 @@
+Vad är pull repektive push?
+Pull: Tar hem ändringar från GitHub till din dator.
+
+Push: Skickar upp dina ändringar från din dator till GitHub
+
+När använder man log respektive status?
+Log Visar en lista över alla förändringar som gjorts. Bra för att se vad som har hänt i projektet.
+
+Status: Visar vilka ändringar som gjorts på din dator som ännu inte är uppladdade eller sparade i Git. Bra för att hålla koll på vad som är klart att laddas upp.
+
+Vad är en Git branch och varför är de viktiga?
+En branch är en kopia av din huvudkod där du kan testa nya saker utan att påverka huvudkoden. När du är klar, kan du lägga ihop din branch med huvudkoden.
+
+viktigt: Brancher gör det säkert att testa saker eller fixa problem utan att påverka hela projektet.
+
+
+Hur går man tillbaka till en tidigare version av koden?
+Det finns flera sätt att göra detta:
+
+Git Reset: Går tillbaka till en viss punkt och tar bort allt som gjorts efteråt.
+
+När: Om du vill ta bort alla ändringar efter en viss punkt.
+Exempel:
+bash
+Kopiera kod
+git reset --hard <commit-id>
+Git Revert: Ångrar en viss ändring men bevarar historiken.
+
+När: Om du vill ta bort en specifik ändring men behålla resten av historiken.
+Exempel:
+bash
+Kopiera kod
+git revert <commit-id>
+Git Checkout: Låter dig se hur koden såg ut vid en viss punkt utan att ändra något.
+
+När: Om du bara vill kolla en tidigare version utan att ändra något permanent.
+Exempel:
+bash
+Kopiera kod
+git checkout <commit-id>
